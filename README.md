@@ -2,6 +2,8 @@
 
 A modular knowledge and reasoning system for producing professional video-editing plans from footage descriptions, music, platforms, genres, and software constraints. This repository is **not a video editor UI**. It teaches an AI how to make editorial decisions, construct timelines, synchronize visuals to music, and communicate executable steps.
 
+This is the unified repository for general AI video editing and the previously separate Phonk Editing Skill. Phonk, Drift, Classic Memphis, Brazilian, Gym/Hype, Sigma/Meme, car, and bass-led workflows now live here alongside the general editing system.
+
 ## What it covers
 
 - Story, continuity, montage, music-video, documentary, gaming, sports, anime/AMV, phonk, travel, fashion, car, and short-form editing.
@@ -14,6 +16,8 @@ A modular knowledge and reasoning system for producing professional video-editin
 Read [`SKILL.md`](SKILL.md) for the agent instructions. Then load only the references required by the task. The highest-priority path for a music-led montage is:
 
 `SKILL.md` → `knowledge/footage-analysis.md` → `knowledge/montage.md` → `knowledge/beat-sync.md` → `knowledge/speed-ramping.md` → `knowledge/sound-design.md` → `workflows/montage-workflow.md` → relevant genre/software file.
+
+For a Phonk edit, use: `SKILL.md` → `knowledge/phonk-editing.md` → `knowledge/montage.md` → `knowledge/beat-sync.md` → `knowledge/speed-ramping.md` → `knowledge/sound-design.md` → the relevant `genres/` file → `workflows/phonk-car-workflow.md` or `workflows/phonk-mobile-workflow.md`.
 
 Use [`templates/montage-template.md`](templates/montage-template.md) for a deliverable and [`scripts/validate_plan.py`](scripts/validate_plan.py) to check required headings and timecode formatting.
 
@@ -29,11 +33,11 @@ Use [`templates/montage-template.md`](templates/montage-template.md) for a deliv
 
 | Directory | Purpose |
 |---|---|
-| `knowledge/` | General editing theory and technical decision rules |
-| `genres/` | Genre-specific editorial grammar and examples |
-| `software/` | Application-aware workflows and feature limits |
-| `workflows/` | Repeatable end-to-end production sequences |
-| `templates/` | Copyable plan, beat-map, and timeline structures |
+| `knowledge/` | General editing theory, Phonk grammar, AI-assisted editing, and technical decision rules |
+| `genres/` | Genre-specific editorial grammar, including Drift, Memphis, Brazilian, Gym/Hype, and Sigma/Meme Phonk |
+| `software/` | Application-aware workflows, mobile workflows, and AI-tool boundaries |
+| `workflows/` | Repeatable end-to-end production sequences, including Phonk car and mobile edits |
+| `templates/` | Copyable plan, beat-map, timeline, and Phonk-plan structures |
 | `examples/` | Worked plans showing the reasoning standard |
 | `scripts/` | Small validation utilities for plan authors |
 

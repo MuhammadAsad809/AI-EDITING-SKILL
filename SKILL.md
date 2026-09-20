@@ -1,7 +1,7 @@
 ---
 name: ai-video-editor
 # Trigger on professional editing plans, montages, beat-sync, timelines, sound, color, and software-specific video workflows.
-description: Professional AI video-editing planning and reasoning skill. Use for analyzing footage descriptions, music, platforms, genres, pacing, montage construction, beat synchronization, cutting, transitions, speed ramps, sound design, color, typography, export settings, and software-specific instructions for Premiere Pro, After Effects, DaVinci Resolve, CapCut, VN, Final Cut Pro, and Alight Motion.
+description: Unified professional AI video-editing reasoning skill. Use for footage analysis, storytelling, montages, Phonk and music-video edits, beat synchronization, timelines, cuts, transitions, speed ramps, sound design, color, typography, AI-assisted media, software-specific workflows, and platform exports.
 ---
 
 # AI Video Editor
@@ -13,7 +13,9 @@ Act as a professional editor, assistant editor, motion designer, sound editor, a
 1. Read this file first.
 2. Read `knowledge/footage-analysis.md`, `knowledge/storytelling.md`, and the most relevant genre/platform/software files.
 3. For montage or music-led work, always read `knowledge/montage.md`, `knowledge/beat-sync.md`, `knowledge/speed-ramping.md`, `knowledge/sound-design.md`, and `workflows/montage-workflow.md`.
-4. Use templates for the final plan and examples as calibration references. Do not copy timings blindly.
+4. For Phonk, drift, Memphis, Brazilian, gym/hype, sigma, car, or bass-led work, also read `knowledge/phonk-editing.md`, the relevant files in `genres/`, and `workflows/phonk-car-workflow.md` or `workflows/phonk-mobile-workflow.md`.
+5. For AI-generated or enhanced media, read `knowledge/ai-assisted-editing.md` and `software/ai-assisted-tools.md`.
+6. Use templates for the final plan and examples as calibration references. Do not copy timings blindly.
 
 ## Intake and assumptions
 
@@ -30,6 +32,14 @@ Extract or ask for: content type, audience, platform, target duration, aspect ra
 7. **Add support layers.** Specify speed, motion, text, sound, color, and transitions only after the cut plan works without them.
 8. **Translate to software.** Label steps `[PREMIERE PRO]`, `[AFTER EFFECTS]`, `[DAVINCI RESOLVE]`, `[CAPCUT]`, `[VN]`, `[FINAL CUT PRO]`, or `[ALIGHT MOTION]`; never assume a feature exists.
 9. **QC and revise.** Run the checklist in `knowledge/fundamentals.md` and fix story, rhythm, intelligibility, consistency, and export risks.
+
+## Phonk and bass-led rules
+
+For Phonk, detect the dominant grammar: Memphis uses hypnotic lo-fi atmosphere; drift uses controlled mechanical momentum; Brazilian uses syncopated movement; gym/hype uses readable physical effort; sigma/meme uses character, text, freeze frames, and graphic punctuation. Hybrids must name the dominant grammar and borrowed accent.
+
+Use downbeats for structural changes, kicks for meaningful movement or cuts, 808s for weight, cowbells or hi-hats for selective texture, and vocal hits for meaning-led captions or reactions. Build-up shots commonly hold 2–4 beats; transition shots 1–2 beats; peak cuts may use 1 beat or half-beat only when the footage remains readable. Do not cut every beat by default.
+
+A speed ramp must specify baseline, anticipation, acceleration, impact/slow motion, recovery, approximate percentages, curve shape, beat alignment, motion-blur needs, and what happens to sound. Use one dominant camera movement per AI-generated shot; avoid stacking whip pan, crash zoom, orbit, and shake in one prompt.
 
 ## Montage and beat-sync rules
 
